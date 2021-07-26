@@ -1,0 +1,247 @@
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  header{
+    background: #cccccc;
+    padding: 20px 0;
+  }
+  .caixa {/*essa caixa foi criada para juntar o logo com o menu*/
+    position: relative;/*relativa pra poder ser movimentada*/
+    width: 940px; /*bom valor de resoluao para a maioria das telas*/
+    margin: 0 auto; /*assim a posicao se altera conforme o tamanho da tela*/
+  }
+  nav{
+    position: absolute;
+    top: 110px;/*mais ou menos a metade da altura da imagem*/
+    right: 0;
+  }
+  
+  nav li {
+    display: inline-flex;
+    margin: 0 0 0 15px;/*isso dá o espaço a esquerda entre os itens*/
+  }
+  nav a {
+    text-transform: uppercase;/*isso coloca o texto em maiusculo*/
+    color: #000000;
+    font-weight: bold; /*negrito*/
+    font-size: 22px;
+    text-decoration: none;/*isso serve para tirar o sublinhado*/
+  
+  }
+  nav a:hover {/*quando o mouse está em cima dos links do menu de navegação*/
+    color: #C78C19; /*muda a cor do titulo do link quando o mouse passar por cima*/
+    text-decoration: underline; /*o titulo fica sublinhado quando o mouse esta por cima */
+  
+  }
+  .produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%; /*essa margem de 1.5 é pra dar espaço entre os quadros*/
+    padding: 30px 20px;
+    box-sizing: border-box; /*não entendi direito pra que serve. parece que é pra nao somar os 30% com os 20px de padding: */ 
+    border-color: #000000;
+    border-width:2px; /*espessura*/
+    border-style: solid; /*lisa, pontilhada*/
+    /*border: 2px solid #000000 */ 
+    border-radius: 10px;
+  }
+  .produtos li:hover { /*hover é o que eu quero que aconteça quando o mouse estiver por cima desse elemento*/
+    border-color: #C78C19;
+  }
+  .produtos li:active{ /*active é o que eu quero que aconteça quando o usu clicar no elemento*/
+    border-color: #088C19;
+  }
+  .produtos li:hover h2 { /*consigo alterar o tamanho da fonte mesmo já tendo especificado noutro bloco*/
+    font-size: 34px;
+  
+  }
+  .produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .produto-descricao {
+    font-size: 18px;
+  
+  }
+  .produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+  footer {
+    text-align: center;
+    background: url("bg.jpg");/*podemos colcoar a imagem de background por aqui, em vez do html*/
+    padding: 40px 0;
+  }
+  .copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+  }
+  
+  form, table {
+    margin: 40px 50px;
+  }
+
+  form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .classPadrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+  }
+
+  .checkbox {
+    margin: 20px 0;
+  }
+
+  .enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+  }
+
+  .enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+  }
+
+  thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+  }
+
+  td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+  }
+
+  
+  /*css da pagina home*/
+  
+  .banner {
+    width: 100%;
+  }
+  .tituloPrincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; /*esse clear limpa o float que foi descrito na img. senão colocar onde ele acaba, o float pega na pagina toda.*/
+  }
+
+  .principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+  }
+  .principal p {
+    margin: 0 0 1em;
+  }
+
+  .principal strong {
+    font-weight: bold;
+  }
+
+  .principal em {
+    font-style: italic;
+  }
+
+  .utensilios {
+   width: 120px; 
+   float: left;
+   margin: 0 20px 20px 0;
+  }
+
+  .mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+  }
+  
+  .mapaConteudo {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+  }
+
+  .beneficios {
+    padding: 3em 0;
+    background: #888888;
+  }
+
+  .conteudoBeneficios {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .listaBeneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .itens {
+    line-height: 1.5em;
+  }
+
+  .itens::first-letter{
+    font-weight: bold;
+  }
+
+  .itens::before{
+    content: "✭";
+  }
+
+  .imagembeneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+  }
+
+  .imagembeneficios:hover {
+    opacity: 0.3ms;
+  }
+
+ .video {
+    width: 560px;
+    margin: 2em auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudoBeneficios, .mapaConteudo, .video {
+      width: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    nav {
+      position: static;
+    }
+    .listaBeneficios, .imagembeneficios {
+      width: 100%;
+    }
+  }
